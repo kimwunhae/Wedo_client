@@ -10,6 +10,7 @@ class Main extends React.Component {
     constructor() {
         super()
         this.state = {
+            userinfo: {},
             todos: [],
             isAddOpen: false,
             isDeleted: false,
@@ -40,13 +41,14 @@ class Main extends React.Component {
         this.getWeather()
         setInterval(this.getTime, 1000)
 
-        axios.get(`http://localhost:5000/main`)
-            .then(res => {
-                this.setState({ todos: res.data })
+        axios.all([axios.get(`http://localhost:5000/main`), axios.get(`http://localhost:5000/followlist`), axios.get(`http://localhost:5000/userinfo`)])
+            .then(axios.spread((todos, followlist, userinfo) => {
+                console.log(todos.data)
+                this.setState({
+                    todos: todos.data, followinfo: followlist.data.friend, userinfo: userinfo.data
+                })
             })
-
-        axios.get(`http://localhost:5000/followlist`)
-            .then(res => this.setState({ followinfo: res.data.friend }))
+            )
     }
     getTime() {
         let day = new Date()
@@ -65,7 +67,8 @@ class Main extends React.Component {
         this.setState({ currentTime: time })
     }
     handleIsShareOpen = () => {
-        this.setState({ isShareOpen: !this.state.isShareOpen })
+        this.setState({ isShareOpen: !this.state.isShareOpen, shareTo: [] })
+        document.getElementById('resetTarget').value = ""
     }
     handleInputValue = (key) => (e) => {
         this.setState({ [key]: e.target.value });
@@ -188,7 +191,8 @@ class Main extends React.Component {
             })
     }
     render() {
-        let { todos, isAddOpen, currentWeatherIcon, currentTemp, isShareOpen, shareTo, publicOnly, followinfo } = this.state
+        let { todos, isAddOpen, currentWeatherIcon, currentTemp,
+            isShareOpen, shareTo, publicOnly, followinfo, userinfo } = this.state
 
         return (
             <div>
@@ -236,21 +240,20 @@ class Main extends React.Component {
                             <form className={isShareOpen ? "addForm toLeft" : "addForm"} onSubmit={(e) => { e.preventDefault(); this.handleAdd(); this.resetForm(); }} >
                                 <div><input type="title" id="titleInput" placeholder="제목" onChange={this.handleInputValue("title")} /></div>
                                 <div><textarea type="body" id="bodyInput" placeholder="내용" onChange={this.handleInputValue("body")} /></div>
-                                <span className="editFormButtons">
+                                <div style={{ width: isShareOpen ? "750px" : "500px", paddingLeft: isShareOpen ? "-200px" : "0px" }} className="editFormButtons">
                                     <button className="cancelButton-main" type="reset" onClick={this.handleAddOpen}></button>
                                     <button id="editOkay-main" type="submit"></button>
                                     <button id={isShareOpen ? "shareButton-main-Active" : "shareButton-main"} type="button" onClick={this.handleIsShareOpen}></button> {/* todo Add와 동시에 Share 할 수 있는 기능 구현*/}
-                                </span>
+                                </div>
                             </form>
                             <div className="addForm" id="shareForm-main" style={{ display: isShareOpen ? "" : "none" }}>
-                                <input className="searchInput" placeholder="친구이름입력" onChange={this.handleInputValue("friendToSearch")}></input>  {/*친구 이름 검색창*/}
-                                <button onClick={this.handleAddShareTo} />
+                                <input className="searchInput" id="resetTarget" placeholder="친구이름입력" onChange={this.handleInputValue("friendToSearch")}></input>  {/*친구 이름 검색창*/}
+                                <button id="addShareFriendButton" onClick={this.handleAddShareTo} />
                                 <div id="shareTo">
                                     {shareTo.map(friend =>
                                         <div key={friend[0]}>
                                             <div className="searchFriendEntry" >
                                                 {friend[1]}
-                                                <button userid={friend[0]} id="removeToShare" onClick={(e) => this.handleRemoveShareTo(e)} />
                                             </div>
                                         </div>)}
                                 </div>
@@ -262,6 +265,7 @@ class Main extends React.Component {
                                     {todos.map(todo =>
                                         <TodoEntry
                                             publicOnly={publicOnly}
+                                            userinfo={userinfo}
                                             key={todo.id}
                                             todo={todo}
                                             followinfo={followinfo}
@@ -271,7 +275,7 @@ class Main extends React.Component {
                         </Motion>
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }

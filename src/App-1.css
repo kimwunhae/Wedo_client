@@ -191,18 +191,46 @@ width : 350px;
   background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
-  
+}
+
+.editFormButtons {
+  margin-top : 80px;
 }
 .editFormButtons .editOkay {
   width : 50px;
   height : 50px;
   background-image: url(../src/images/editOkay.png);
   background-size: 25px;
+  border-radius: 25px;
   background-position: center;
   background-repeat: no-repeat;
   float: right;
   margin: 5px;
 }
+.editFormButtons .shareButton {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/addUser.png);
+  background-size: 35px;
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons .shareButton-active {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/addUser.png);
+  background-size: 35px;
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+  box-shadow : inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
 #editOkay-main {
   border-radius: 100%;
   width : 50px;
@@ -232,6 +260,7 @@ width : 350px;
   background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 25px;
   float: left;
   margin: 5px;
 }
@@ -241,6 +270,7 @@ width : 350px;
   background-image: url(../src/images/cancel.png);
   background-size: 20px;
   background-position: center;
+  border-radius: 25px;
   background-repeat: no-repeat;
   float: right;
   margin: 5px;
@@ -254,13 +284,15 @@ width : 350px;
 .addForm {
   margin : 0 auto;
   width: 500px;
-  height : 400px;
+  height : 300px;
 }
 .addForm input {
   border : 0;
   padding : 15px;
   box-sizing: border-box;
   outline : none;
+  font-weight: bold;
+  font-size : 15px;
   background:  #E3EDF7;
   width: 500px;
   height: 36px;
@@ -272,6 +304,7 @@ width : 350px;
   border : 0;
   box-sizing: border-box;
   padding : 15px;
+  font-weight: 600;
   outline : none;
   background:  #E3EDF7;
   width: 500px;
@@ -644,16 +677,21 @@ float: right;
 #shareForm-main input{
   box-sizing: border-box;
   float : left;
+  color :  #2929ba;
+  font-weight: 600;
   width : 150px;
 }
 
 #shareForm-main button{
   box-sizing: border-box;
-  margin-top : 0px;
-  margin-right : 5px;
-  float : right;
-  width : 30px;
-  height: 30px;
+  margin : 0;
+  background-size: 25px;
+  background-image: url(../src/images/share.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  width : 35px;
+  height: 35px;
 }
 
 .addForm.editEntry {
@@ -699,31 +737,31 @@ float: right;
 .searchFriendEntry {
   width : 150px;
   float: left;
+  color :  #4848ee;
   margin : 10px auto;
-  font-size : 18px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size : 15px;
+  font-weight: bold;
+  border-style : solid;
+  border-image: linear-gradient(125deg,  #8ec8f8 0%,#86A8E7 50%, #7070cf 100%);
+  border-image-width : 0 0 4px 0;
+  border-image-slice: 1;
 }
 
 .searchFriendEntry button{
  width : 20px !important;
  height: 20px !important;
+ background-image: url(../src/images/cancel.png) !important;
+ background-size: 10px !important;
  border-radius: 30%;
+ margin : 10px auto;
 }
 
 .toLeft {
   float: left;
   margin-left: 50px;
   margin-right :0
-}
-
-#removeToShare {
-  margin : 0 ;
-  width : 25px;
-  height : 25px;
-  float: right;
-  background-image: url(../src/images/cancel.png);
-  background-size: 15px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #progressBar {
