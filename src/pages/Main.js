@@ -240,7 +240,7 @@ class Main extends React.Component {
                             <form className={isShareOpen ? "addForm toLeft" : "addForm"} onSubmit={(e) => { e.preventDefault(); this.handleAdd(); this.resetForm(); }} >
                                 <div><input type="title" id="titleInput" placeholder="제목" onChange={this.handleInputValue("title")} /></div>
                                 <div><textarea type="body" id="bodyInput" placeholder="내용" onChange={this.handleInputValue("body")} /></div>
-                                <div style={{ width: isShareOpen ? "750px" : "500px", paddingLeft: isShareOpen ? "-200px" : "0px" }} className="editFormButtons">
+                                <div style={{ overflow: "hidden", width: isShareOpen ? "750px" : "500px", paddingLeft: isShareOpen ? "-200px" : "0px", marginTop: "0px" }} className="editFormButtons">
                                     <button className="cancelButton-main" type="reset" onClick={this.handleAddOpen}></button>
                                     <button id="editOkay-main" type="submit"></button>
                                     <button id={isShareOpen ? "shareButton-main-Active" : "shareButton-main"} type="button" onClick={this.handleIsShareOpen}></button> {/* todo Add와 동시에 Share 할 수 있는 기능 구현*/}

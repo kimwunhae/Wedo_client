@@ -242,7 +242,7 @@ class TodoEntry extends React.Component {
                             <Motion defaultStyle={{ y: -100, opacity: 0 }} style={{ y: spring(0), opacity: spring(1) }}>
                                 {(style) => (<li className="todo-body" style={{ transform: `translateY(${style.y}px)`, opacity: style.opacity }}>
                                     <h5 style={{ textDecorationLine: isclear ? 'line-through' : '' }}>{body}</h5>
-                                    {shareFriends.map(val => <div>{val[0]}님이 해당 To do를 {val[1] ? "완료하셨습니다" : "아직 완료하지 못하셨습니다"}</div>)}
+                                    {shareFriends.map(val => <div style={{ margin: "10px 0px 10px 10px", fontSize: "18px" }}><b>{val[0]}님</b>이 해당 To do를 {val[1] ? "완료하셨습니다" : "아직 완료하지 못하셨습니다"}</div>)}
                                 </li>)}
                             </Motion>
                             : ''
