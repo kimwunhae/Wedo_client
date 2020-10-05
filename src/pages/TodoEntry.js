@@ -36,7 +36,6 @@ class TodoEntry extends React.Component {
         let sharingList = this.props.todo.users.map(users => [users.id, users.full_name])
 
         this.setState({ shareTo: sharingList })
-
         this.checkUsersClear();
 
     }
@@ -177,8 +176,8 @@ class TodoEntry extends React.Component {
 
         if (title && body) {
             axios.post("http://localhost:5000/todoedit", data)
-                .then(res => console.log(res))
-                .catch((e) => console.log(e))
+                .then(() => axios.get(`http://localhost:5000/main`)
+                    .then(res2 => this.props.handleFetchTodo(res2.data)))
                 .then(this.handleModifyOpen)
         }
         else {
@@ -222,7 +221,7 @@ class TodoEntry extends React.Component {
                 <div style={{ overflow: "hidden", display: isModifyOpened ? "" : "none", marginBottom: "50px", marginTop: "20px", width: isShareOpen ? "810px" : "740px", padding: isShareOpen ? "0 10px 10px 35px" : "0 65px 10px 160px" }} className="editFormButtons">
                     <button type="button" className="deleteButton" onClick={this.handleDelete}></button>
                     <div>
-                        <button type="submit" className="editOkay"></button>
+                        <button type="submit" className="editOkay" onClick={this.handleModify}></button>
                         <button type="button" className="cancelButton" onClick={this.handleModifyOpen}></button>
                         <button type="button" className={isShareOpen ? "shareButton-active" : "shareButton"} onClick={this.handleIsShareOpen}></button>
                     </div>
