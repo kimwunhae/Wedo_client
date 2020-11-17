@@ -1,0 +1,800 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  align-items: center;
+}
+.Text{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+color: black;
+}
+.pagebox {
+  background: #eef4fa;
+  box-shadow: -3.92441px -3.92441px 14.6509px #f4f6fa, 5.23254px 5.23254px 10.4651px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;;
+  border-radius: 50px;
+  padding : 40px;
+  padding-top: 50px;
+  margin: 2% auto;
+  width: 925px;
+  min-height: 1350px;
+  height:fit-content;
+} 
+.textbox{
+ margin: 0 auto;
+  top: 20px;
+  position: relative;
+  width: 845px;
+  height: 300px;
+  display : table;
+  vertical-align: middle;
+}
+.Sayhi{
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 85px;
+  text-align: left;
+  background : linear-gradient(130deg,  #8ec8f8 0%,#86A8E7 20%, #3c3cdb 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -5px;
+  line-height: 80px;
+}
+.Signin {
+  position: relative;
+  margin : 100px auto 0px auto;
+  width: 350px;
+  height: 600px;
+}
+.Form{
+  align-items: center;
+  vertical-align: middle;
+}
+.Form label {
+  margin-top : 20px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 20px; /* identical to box height */
+align-items: center;
+text-align: center;
+color: black;
+}
+.Form input {
+  margin-top: 15px;
+  border : 0;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 350px;
+  height: 36px;
+  background: #DAE6F2;
+box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+border-radius: 15px;
+}
+button {
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: 36px;
+  width: 350px;
+  box-shadow: -3.92441px -3.92441px 14.6509px #F9FBFD, 5.23254px 5.23254px 10.4651px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color : #665fc0;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover {
+  background-color : #cbd6e0d8;
+}
+button:active {
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+.headerText{
+  text-align: center; 
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: -2px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+  background : linear-gradient(45deg,  #FC5C7D 0%, #6A82FB 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.edit-user .headerText{
+  padding-top: 60px;
+}
+.edit-nickname .headerText{
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 30px; 
+}
+.edit-password .headerText{
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 30px;  
+}
+.Signup{
+  width : 350px;
+  height: 100vh;
+  margin : 25px auto;
+  background : linear-gradient(45deg,  #FC5C7D 0%, #6a82fb 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 23px;
+  padding: 5px;
+}
+.Signup button{
+margin-top : 50px;
+width : 350px;
+}
+.signupButtons button{
+  font-size: 18px;
+  font-weight: bold;
+}
+.signInput{
+  margin-left : auto;
+  margin-bottom : 15px
+  }
+.signInput input{
+  -webkit-text-fill-color: #555b77;
+}
+
+.pagebox h1{
+  text-align: center;
+}
+.pagebox h2{
+  box-sizing: border-box;
+  padding-left : 50px;
+  text-align: left;
+}
+.todoListTitle{
+  font-size: 25px;
+  text-align: left;
+  padding: 40px;
+  background : linear-gradient(140deg,  #8ec8f8 0%,#86A8E7 20%, #3c3cdb 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.currentTime-main{
+  font-size: 20px;
+  text-align: right;
+  margin-top:-40px;
+  padding: 0px 20px 0px 0px;
+  float: right;
+  background : linear-gradient(45deg,  #FC5C7D 0%, #6A82FB 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pagebox h3{
+  text-align: right;
+}
+.add-todo{
+  margin-top: -60px;
+  height : 400px;
+}
+.itm-modify-btn {
+  margin: 10px;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/edit.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.editFormButtons {
+  margin-top : 80px;
+}
+.editFormButtons .editOkay {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/editOkay.png);
+  background-size: 25px;
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons .shareButton {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/addUser.png);
+  background-size: 35px;
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons .shareButton-active {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/addUser.png);
+  background-size: 35px;
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+  box-shadow : inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
+#editOkay-main {
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/add3.png);
+  background-size: 33px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons .cancelButton-main{
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/cancel.png);
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons .deleteButton {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/delete.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  float: left;
+  margin: 5px;
+}
+.editFormButtons .cancelButton{
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/cancel.png);
+  background-size: 20px;
+  background-position: center;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons button:active{
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+.editFormButtons button:hover{
+  background-color : #cbd6e0d8;
+}
+.addForm {
+  margin : 0 auto;
+  width: 500px;
+  height : 300px;
+}
+.addForm input {
+  border : 0;
+  padding : 15px;
+  box-sizing: border-box;
+  outline : none;
+  font-weight: bold;
+  font-size : 15px;
+  background:  #E3EDF7;
+  width: 500px;
+  height: 36px;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+}
+.addForm textarea {
+  margin-top: 30px;
+  border : 0;
+  box-sizing: border-box;
+  padding : 15px;
+  font-weight: 600;
+  outline : none;
+  background:  #E3EDF7;
+  width: 500px;
+  height: 250px;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  resize: none;
+}
+.addForm button {
+  float: right;
+  margin-top: 20px;
+  border : 0;
+  padding : 0;
+  background:  #E3EDF7;
+  width: 100px;
+  height: 35px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+.todo-title{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.todo-title h2{
+  margin-left: -25px;
+  text-align : left;
+  color :  black
+}
+.todo-title button{
+  float: right;
+  text-align : center;
+  width: 50px;
+}
+.todo-entry{
+  padding : 2px;
+}
+.todo-body {
+  margin-left: 15px;
+  font-size: 20px;
+  height : fit-content;
+  box-sizing: border-box;
+  padding : 5px;
+  list-style-type: none;
+  background : linear-gradient(0deg,  #FC5C7D 0%, #6A82FB 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.todo-title {  
+  padding: 1px;
+  background : linear-gradient(0deg,  #FC5C7D 0%, #6A82FB 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  list-style-type: none;
+  border-radius: 15px;
+  box-shadow: -3.92441px -3.92441px 14.6509px #F9FBFD, 5.23254px 5.23254px 10.4651px rgba(0, 0, 0, 0.25);
+  
+}
+.todo-title h5{
+  padding : 10px;
+  text-align : left;
+  color :  black;
+}
+.weatherInfo-night {
+  color: #E3EDF7;
+  background: linear-gradient(200deg, #2e2e99 0%,#3c5a90 33%, #6bafaa9d 100%);
+  width : 100px;
+  height : 100px;
+  margin-left : 5%;
+  border-radius: 100%;
+  box-shadow: 2px 4px 4px rgba(121, 120, 120, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.weatherInfo-night .currentTemp{
+  background : linear-gradient(0deg,  #FC5C7D 0%, #6A82FB 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.weatherInfo-day {
+  color: #E3EDF7;
+  background: linear-gradient(145deg,#0da4e0 0%, #fff1cb8c 100%);
+  width : 100px;
+  height : 100px;
+  margin-left : 5%;
+  border-radius: 100%;
+  box-shadow: 2px 4px 4px rgba(121, 120, 120, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  text-shadow:-0.5px 0.5px 2px #868686bc, 1.5px 1.5px 1.5px #808080e7;
+}
+.weatherImage {
+  margin-left: -7px;
+  margin-top : -10px;
+  width : 120px;
+  height : 120px;
+}
+.currentTemp {
+  height: 100px;
+  width: 300px;
+  padding-top: 10px;
+  line-height: 95%;
+  margin-top: -105px;
+  margin-left: 115px;
+  text-align: left;
+  font-size: 30px;
+  color: #ffffff;
+}
+.currentTime{
+  text-align: right;
+  line-height:10%;
+  padding: 20px;
+  font-size: 50px;
+  float: right;
+  background : linear-gradient(180deg,  #8ec8f8 0%,#86A8E7 50%, #3c3cdb 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.edit-user{
+  text-align: center;
+  padding-top : 15px;
+}
+.edit-user button {
+  margin-top : 30px;
+}
+.edit-user h1 {
+  letter-spacing: normal;
+  font-size : 50px;
+  margin-top : 40px;
+}
+.edit-user h2 {
+  letter-spacing: normal;
+  font-size : 40px;
+  margin-top : 3px;
+  margin-bottom : 50px;
+}
+.edit-nickname {
+  margin : 0 auto;
+  box-sizing: border-box;
+  padding : 40px;
+  width : 700px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 70px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.edit-nickname button{
+  width: 350px;
+}
+.edit-password {
+  margin : 0 auto;
+  box-sizing: border-box;
+  padding : 40px;
+  width : 700px;
+  height: 500px;
+  border-radius: 15px;
+  margin-top: 70px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.edit-password input{
+  margin-top : 30px;
+}
+.edit-password button{
+  width: 350px;
+}
+#GoToSignup {
+  margin-top: 30px;
+  text-align: center;
+  color: #7F7FD5;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#GoToSignup:hover{
+  color: #86A8E7;
+  text-decoration: none;
+
+}
+#GoToSignup:active{
+  color:#7F7FD5;
+}
+#Login {
+  margin-top: 30px;
+  font-weight: 800;
+}
+#OauthGoogle {
+  font-weight: 800;
+  margin-top: 170px;
+  background-image: url(../src/images/google.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 20px 
+}
+
+.nav button {
+  float: right;
+  width : 100px;
+  background-color: #eef4fa;
+  margin-left : 20px;
+}
+#edit-logout{
+  margin-right: 20px;
+}
+#xkfxhl{
+  margin-top:60px;
+  width : 350px;
+  height : 50px;
+}
+
+.addButton{
+  background: linear-gradient(125deg,  #8ec8f8 0%,#86A8E7 50%, #7070cf 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  width : 200px;
+  height : 40px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  float: left;
+  -webkit-text-fill-color: white;
+}
+
+.addButtons-main{
+  margin-left: 490px;
+  height: 70px;
+}
+.addButtons-main button{
+  width: 140px;
+}
+
+#noFriends {
+  margin-top : 370px;
+  letter-spacing: -2px;
+  font-size: 85%;
+}
+
+.followlistbox {
+  text-align: center;
+  margin : 100px auto;
+  box-sizing: border-box;
+  width : 800px;
+  min-height : 1070px;
+  height : fit-content;
+}
+
+.follower{
+  list-style-type: none;
+}
+
+.followerbox{
+  box-sizing: border-box;
+  width : 780px;
+  height : 80px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.entry{
+  margin-top: 15px;
+  font-size: 22px;
+  border : 0;
+  box-sizing: border-box;
+  padding : 10px 0;
+  padding-left : 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+.followerbox {
+  margin : 30px auto;
+  height: 70px;
+}
+.follower .name{
+  margin-left : -60px;
+  text-align: center;
+  width : 250px;
+  float : left;
+}
+
+.follower .email {
+  text-align: center;
+  width : 350px;
+  float: left;
+}
+
+.follower .button {
+  width : 50px;
+  height:50px;
+  float : right;
+  margin: 9px auto;
+  margin-right: 30px;
+  border-radius: 100%;
+  background-image: url(../src/images/deleteUser.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ul {
+  padding : 0;
+}
+
+.modal-mask {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.713);
+  z-index: 1;
+}
+
+.modal-window {
+  margin : 20% auto;
+  width : 500px;
+  height : 500px;
+  z-index: 2;
+  background-color: #E3EDF7;
+  border-radius: 25px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.addFriend{
+  padding-top : 80px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.addFriend input{
+  margin-top : 80px;
+}
+
+.addFriend button{
+  margin-top : 30px;
+  background: linear-gradient(125deg,  #8ec8f8 0%,#86A8E7 50%, #7070cf 100%);
+  color: white;
+}
+
+#yet {
+  width : 50px;
+  height : 50px;
+  margin: 10px;
+  float : right;
+  background-image: url(../src/images/yet2.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.todo-entry #done {
+  width : 50px;
+  height : 50px;
+  margin: 10px;
+  float : right;
+  background-image: url(../src/images/done.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
+#logo{
+  height: 200px;
+  margin: 0px auto;
+  margin-top: 80px;
+  background-image: url(../src/images/logo.png);
+  background-size: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#shareForm-main {
+float: right;
+ width : 200px;
+ margin-right: 50px;
+}
+/* ============================ 조성민 추가분 ==========================*/
+#shareForm-main input{
+  box-sizing: border-box;
+  float : left;
+  color :  #2929ba;
+  font-weight: 600;
+  width : 150px;
+}
+
+#shareForm-main button{
+  box-sizing: border-box;
+  margin : 0;
+  background-size: 25px;
+  background-image: url(../src/images/share.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  width : 35px;
+  height: 35px;
+}
+
+.addForm.editEntry {
+  padding-top: 20px;
+  margin-right: 50px;
+}
+#shareTo {
+  padding-top : 10px;
+  padding-left : 25px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  float: right;
+  background-color: #E3EDF7;
+  margin-top: 30px;
+  width : 200px;
+  height : 250px;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+#shareButton-main {
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/addUser.png); 
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 5px;  
+}
+#shareButton-main-Active{ /* share 상태 on */
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+ background-image: url(../src/images/addUser.png); 
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 5px;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
+.searchFriendEntry {
+  width : 150px;
+  float: left;
+  color :  #4848ee;
+  margin : 10px auto;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size : 15px;
+  font-weight: bold;
+  border-style : solid;
+  border-image: linear-gradient(125deg,  #8ec8f8 0%,#86A8E7 50%, #7070cf 100%);
+  border-image-width : 0 0 4px 0;
+  border-image-slice: 1;
+}
+
+.searchFriendEntry button{
+ width : 20px !important;
+ height: 20px !important;
+ background-image: url(../src/images/cancel.png) !important;
+ background-size: 10px !important;
+ border-radius: 30%;
+ margin : 10px auto;
+}
+
+.toLeft {
+  float: left;
+  margin-left: 50px;
+  margin-right :0
+}
+
+#progressBar {
+  padding-top: 25px;
+  padding-bottom:10px;
+  width: 180px;
+  height: 10px;
+}
+#progressBlock {
+  text-align: right;
+  background : linear-gradient(140deg,  #d18ef8 70%,#9886e7 78%, #3c3cdb 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+}
+#progressText{
+  font-size: 20px;
+  letter-spacing: -10%;
+  padding-right: 30px;
+  padding-bottom:20px;
+  margin-top: 10px;
+}
+#shareFiltering {
+  width: 150px;
+  margin-left : 82%;
+  align-items: right;
+}
+.edit-user .addButton{
+  float: none;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.searchInput {
+  margin-top: 0;
+  width : 100px;
+}

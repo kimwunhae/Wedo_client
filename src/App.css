@@ -1,0 +1,625 @@
+.App {
+  text-align: center;
+  align-items: center;
+}
+.Text{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+color: black;
+}
+.pagebox {
+  background: #eef4fa;
+  box-shadow: -3.92441px -3.92441px 14.6509px #f4f6fa, 5.23254px 5.23254px 10.4651px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding : 40px;
+  margin: 2% auto;
+  width: 925px;
+  min-height: 1350px;
+height: fit-content;
+}
+.textbox{
+  margin-top: 50px;
+  top: 20px;
+  position: relative;
+  float: right;
+  width: 845px;
+  height: 300px;
+  display : table;
+  vertical-align: middle;
+}
+.Sayhi{
+  font-size: 80px;
+  line-height: 50px;
+  text-align: right;
+  background : linear-gradient(180deg, #3C8AFA 0%, #0038FD 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -5px;
+  line-height: 90px;
+}
+.Signin {
+  position: relative;
+  margin : 100px auto 0px auto;
+width: 350px;
+height: 600px;
+}
+.Form{
+  align-items: center;
+  vertical-align: middle;
+}
+.Form label {
+  margin-top : 20px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 20px; /* identical to box height */
+align-items: center;
+text-align: center;
+color: black;
+}
+.Form input {
+  margin-top: 15px;
+  border : 0;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 350px;
+  height: 36px;
+  background: #DAE6F2;
+box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+border-radius: 15px;
+}
+button {
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: 36px;
+  width: 350px;
+  background: #E3EDF7;
+  box-shadow: -3.92441px -3.92441px 14.6509px #F9FBFD, 5.23254px 5.23254px 10.4651px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+color : #2358AD;
+font-size: 15px;
+font-weight: bold;
+}
+button:hover {
+  background-color : #cbd6e0d8;
+}
+button:active {
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+.Signup{
+  width : 350px;
+  height: 100vh;
+  margin : 10% auto;
+}
+.Signup button{
+margin-top : 50px;
+width : 350px;
+}
+.signInput{
+  margin-left : auto;
+  margin-bottom : 5px
+  }
+.pagebox h1{
+  text-align: center;
+}
+.pagebox h2{
+  box-sizing: border-box;
+  padding-left : 50px;
+  text-align: left;
+  letter-spacing: 5px;
+}
+.pagebox h3{
+  text-align: right;
+}
+.add-todo{
+  height : 400px;
+}
+.itm-modify-btn {
+  margin: 10px;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/edit.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+#editOkay {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/editOkay.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+#editOkay-main {
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/add3.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+#shareButton-main {
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  /* background-image: url(../src/images/add3.png); */
+  background-color: #ffffff;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+#cancelButton-main{
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/cancel.png);
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+#deleteButton {
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/delete.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 5px;
+}
+#cancelButton{
+  width : 50px;
+  height : 50px;
+  background-image: url(../src/images/cancel.png);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+}
+.editFormButtons button:active{
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+.editFormButtons button:hover{
+  background-color : #cbd6e0d8;
+}
+.addForm {
+  margin : 0 auto;
+  width: 500px;
+  height : 400px;
+}
+.toLeft {
+  float: left;
+  margin-left: 50px;
+}
+.addForm input {
+  border : 0;
+  padding : 15px;
+  box-sizing: border-box;
+  outline : none;
+  background:  #E3EDF7;
+  width: 500px;
+  height: 36px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+.addForm textarea {
+  margin-top: 30px;
+  border : 0;
+  box-sizing: border-box;
+  padding : 15px;
+  outline : none;
+  background:  #E3EDF7;
+  width: 500px;
+  height: 250px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  resize: none;
+}
+.addForm button {
+  float: right;
+  margin-top: 20px;
+  border : 0;
+  padding : 0;
+  background:  #E3EDF7;
+  width: 100px;
+  height: 35px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+.todo-title h2{
+  margin-left: -25px;
+  text-align : left;
+  color :  black
+}
+.todo-title button{
+  float: right;
+  text-align : center;
+  width: 50px;
+}
+.todo-entry{
+  padding : 2px;
+}
+.todo-body {
+  margin-left: 40px;
+  width: 500px;
+  height : fit-content;
+  box-sizing: border-box;
+  padding : 15px;
+  list-style-type: none;
+}
+.todo-title {  
+  padding: 1px;
+  list-style-type: none;
+  border-radius: 15px;
+  box-shadow: -3.92441px -3.92441px 14.6509px #F9FBFD, 5.23254px 5.23254px 10.4651px rgba(0, 0, 0, 0.25);
+  
+}
+.todo-title h5{
+  padding : 10px;
+  text-align : left;
+  color :  black;
+}
+.weatherInfo {
+  color: #E3EDF7;
+  background: linear-gradient(145deg, #460f57 8%, #00587A 28.73%, rgba(0, 104, 145, 0.9) 51.65%, rgba(231, 231, 222, 0.349) 87.07%);
+  width : 250px;
+  height : 250px;
+  margin-left : 5%;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  text-shadow:2px 2px 2px rgba(151, 151, 151, 0.884)
+}
+.weatherInfo-day {
+  color: #E3EDF7;
+  background: linear-gradient(145deg,#0fc0ecbe 0%, #eaecc68c 100%);
+  width : 250px;
+  height : 250px;
+  margin-left : 10%;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.weatherImage {
+  margin : -40px;
+  margin-top : -10px;
+  width : 200px;
+  height : 200px;
+  top : 0;
+}
+.currentTemp {
+  margin : 0px auto;
+}
+.currentTime{
+  padding: 10px;
+  font-size: 25px;
+  float: right;
+  background : linear-gradient(180deg, #3C8AFA 0%, #0038FD 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.edit-user{
+  text-align: center;
+  padding-top : 15px;
+}
+.edit-user button {
+  margin-top : 30px;
+}
+.edit-user h1 {
+  letter-spacing: normal;
+  font-size : 50px;
+  margin-top : 40px;
+}
+.edit-user h2 {
+  letter-spacing: normal;
+  font-size : 40px;
+  margin-top : 3px;
+  margin-bottom : 50px;
+}
+.edit-nickname {
+  margin : 0 auto;
+  box-sizing: border-box;
+  padding : 40px;
+  width : 700px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 70px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.edit-nickname button{
+  width: 350px;
+}
+.edit-password {
+  margin : 0 auto;
+  box-sizing: border-box;
+  padding : 40px;
+  width : 700px;
+  height: 500px;
+  border-radius: 15px;
+  margin-top: 70px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.edit-password input{
+  margin-top : 30px;
+}
+.edit-password button{
+  width: 350px;
+}
+#GoToSignup {
+  margin-top: 100px;
+  text-align: center;
+  color: #2358AD;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#GoToSignup:hover{
+  color: #ff0000;
+  text-decoration: none;
+
+}
+#GoToSignup:active{
+  color:#949494;
+}
+#Login {
+  margin-top: 50px;
+  font-weight: 800;
+}
+#OauthGoogle {
+  font-weight: 800;
+  margin-top: 20px;
+  background-image: url(../src/images/google.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 20px 
+}
+
+.nav button {
+  float: right;
+  width : 100px;
+  margin-left : 20px;
+}
+#xkfxhl{
+  margin-top:100px;
+  width : 350px;
+  height : 50px;
+}
+#addButton{
+ 
+  width : 400px;
+  height : 40px;
+  margin: 0 auto;
+}
+
+#noFriends {
+  margin-top : 370px;
+  letter-spacing: -2px;
+}
+
+.followlistbox {
+  text-align: center;
+  margin : 100px auto;
+  box-sizing: border-box;
+  width : 800px;
+  min-height : 1070px;
+  height : fit-content;
+}
+
+.follower{
+  list-style-type: none;
+}
+
+.followerbox{
+  box-sizing: border-box;
+  width : 780px;
+  height : 80px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.entry{
+  margin-top: 15px;
+  font-size: 20px;
+  border : 0;
+  box-sizing: border-box;
+  padding : 10px 0;
+  padding-left : 10px;
+  background:  #e3f4f7;
+  height: 50px;
+  border-radius: 10px;
+}
+.followerbox {
+  margin : 30px auto;
+}
+.follower .name{
+  margin-left : 20px;
+  text-align: center;
+  width : 250px;
+  float : left;
+}
+
+.follower .email {
+  text-align: center;
+  width : 350px;
+  margin-left : 40px;
+  float: left;
+}
+
+.follower .button {
+  width : 50px;
+  margin-left : 40px;
+  float : left;
+  background-image: url(../src/images/deleteUser.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ul {
+  padding : 0;
+}
+
+.modal-mask {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.713);
+  z-index: 1;
+}
+
+.modal-window {
+  margin : 20% auto;
+  width : 500px;
+  height : 500px;
+  z-index: 2;
+  background-color: #E3EDF7;
+  border-radius: 25px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.addFriend{
+  padding-top : 80px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.addFriend input{
+  margin-top : 80px;
+}
+
+.addFriend button{
+  margin-top : 30px;
+}
+
+#yet {
+  width : 50px;
+  height : 50px;
+  margin: 10px;
+  float : right;
+  background-image: url(../src/images/yet2.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#done {
+  width : 50px;
+  height : 50px;
+  margin: 10px;
+  float : right;
+  background-image: url(../src/images/done.png);
+  background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================10/2 수정 ====================================== */
+#shareForm-main {
+  float : right;
+  width : 200px;
+}
+
+#shareForm-main input{
+  box-sizing: border-box;
+  float : right;
+  width : 250px;
+}
+
+#searchFriendList {
+  width : 100px;
+  min-height : 30px;
+  height: fit-content;
+  z-index: 1;
+  float: right;
+}
+
+#searchFriendList button{
+  margin : 5px auto;
+  width: 100px;
+}
+
+#shareTo {
+  padding-top : 10px;
+  padding-left : 25px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  float: right;
+  background-color: #E3EDF7;
+  margin-top: 30px;
+  width : 250px;
+  height : 250px;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
+#shareButton-main-Active{ /* share 상태 on*/
+  border-radius: 100%;
+  width : 50px;
+  height : 50px;
+  /* background-image: url(../src/images/add3.png); */
+  background-color: #ffffff;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  margin: 5px;
+  box-shadow: inset -5.86034px -5.86034px 19.5345px rgba(249, 251, 253, 0.371), inset 3.9069px 3.9069px 3.9069px rgba(0, 0, 0, 0.18);
+}
+
+.searchFriendEntry {
+  width : 200px;
+  float: left;
+  margin : 10px auto;
+  font-size : 20px;
+}
+
+.toLeft {
+  float: left;
+  margin-left: 50px;
+}
+
+#removeToShare {
+  margin : 0 ;
+  width : 25px;
+  height : 25px;
+  float: right;
+  background-image: url(../src/images/cancel.png);
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#progressBar {
+  width: 100px;
+  height: 100px;
+}
+
+#progressBlock {
+  text-align: right;
+}
+
+#shareFiltering {
+  width: 150px;
+  margin-left : 82%;
+  align-items: right;
+}

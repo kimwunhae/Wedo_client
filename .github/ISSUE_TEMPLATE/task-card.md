@@ -1,5 +1,11 @@
 ---
 name: Task Card
+
+about: Task 카드 생성시 사용되는 template 입니다.
+title: "[Task] 작업 내용을 작성해 주세요"
+labels: ''
+assignees: kyugshim, Kim-144, kimwunhae, p33a33
+=======
 about: task card template
 title: "[Task] 작업 내용을 작성해 주세요."
 labels: ''
